@@ -3,7 +3,7 @@ use sys_info;
 fn main() {
     match env::current_dir() {
         Ok(path) =>   println!(" The current working directory is: {:?}",path),
-        Err(_) => println!("we could not get the current working directory")    
+     Err(_) => println!("we could not get the current working directory")    
     }
     match sys_info::os_type() {
         Ok(os_name) => println!("the OS name is: {}", os_name),
